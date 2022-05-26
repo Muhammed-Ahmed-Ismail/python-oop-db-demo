@@ -44,11 +44,11 @@ def get_db_curser():
         password="muhammedahmed",
         database='pydb'
     )
-    return mydb,mydb.cursor()
+    return mydb, mydb.cursor()
+
 
 def prepare_data_base():
-    db,cur=get_db_curser()
+    db, cur = get_db_curser()
     cur.execute('''drop table if exists employees''')
     cur.execute('''
     create table employees (id int AUTO_INCREMENT primary key  , name varchar(50),is_manager bit,age int) ''')
-

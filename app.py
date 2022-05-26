@@ -15,13 +15,15 @@ if clear_data_choice == 'y':
     prepare_data_base()
 
 choice = ''
+
 while choice is not 'q':
-    choice = input("type add if you want to add a new employee: ")
+    choice = input("type add if you want to add a new employee abd q for quit : ")
     if choice == 'add':
         name = input("Enter the name: ")
         age = input("Enter the age: ")
-        level = input("enter whether the employee is a normal or manager for normal enter nrml and mngr for manager ")
+        level = input("enter whether the employee is a normal or manager for normal enter nrml and mngr for manager: ")
         if level == 'nrml':
             add_employee(name, age, False)
         else:
             add_employee(name, age, True)
+

@@ -3,7 +3,8 @@ from .util import *
 
 
 class Employee(Person):
-    def __init__(self, name, age, is_manager, emp_id, money=1000, sleep_mood='happy', health_rate=100, email='example@gmail.com', work_mood='happy', salary=10000):
+    def __init__(self, name, age, is_manager, emp_id, money=1000, sleep_mood='happy', health_rate=100,
+                 email='example@gmail.com', work_mood='happy', salary=10000):
         super().__init__(name, age, money, sleep_mood, health_rate)
         self.id = emp_id
         self.email = email
