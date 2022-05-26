@@ -8,7 +8,6 @@ def add_employee(name, age, is_manager):
     Employee.add(name, age, is_manager)
 
 
-cur = get_db_curser()
 
 print("Employees App")
 clear_data_choice = input("do you want to clear the previous data? (y,any button for no ) :  ").lower()
