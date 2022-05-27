@@ -1,10 +1,9 @@
 import re
-import os
+
 
 import mysql.connector
 
 
-# bad
 
 
 def email_checker(email):
